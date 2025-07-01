@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "cbwQcaDCKjs=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\eduar\\Desktop\\Distribuidos\\Compilador\\Compilador\\Compilador.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\eduar\\.nuget\\packages\\antlr4.runtime.standard\\4.13.1\\antlr4.runtime.standard.4.13.1.nupkg.sha512"
+  ],
+  "logs": []
+}
