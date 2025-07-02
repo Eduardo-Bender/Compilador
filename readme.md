@@ -1,3 +1,6 @@
+# Compilador de "Fortall"
+#### Gramática definida baseada na linguagem Fortall:
+
 grammar Fortall;
 
 program             : line* EOF ;
@@ -46,3 +49,46 @@ block               : '{' line* '}' ;
 ID                  : [a-zA-Z_][a-zA-Z0-9_]* ;
 WHITESPACE          : [ \t\r\n]+ -> skip ;  
 COMMENT             : '/*' .*? '*/' -> skip ;
+
+
+#### Tecnologias utilizadas:
+* C#
+* .NET 9.0+
+* Java 8+
+
+### Instalação e documentação
+* Para instalar o .NET mais recente, vide os tutoriais: 
+    * MacOS: https://learn.microsoft.com/en-us/dotnet/core/install/macos
+    * Windows: https://learn.microsoft.com/en-us/dotnet/core/install/windows
+
+O modo mais simples é utilizando do terminal de cada sistema, em Mac, rode o seguinte script:
+```
+chdir ~/Downloads
+brew install wget
+wget https://dot.net/v1/dotnet-install.sh
+chmod +x dotnet-install.sh
+./dotnet-install.sh
+```
+
+Em Windows:
+```
+winget install Microsoft.DotNet.SDK.9
+```
+
+* Para Instalar o OpenJDK: https://www.oracle.com/java/technologies/downloads/
+
+* Após instalar o necessário, abra o terminal na pasta Compilador
+
+![alt text](image.png)
+
+* Rode o projeto com ``dotnet run``
+
+Há outras maneiras de executar o projeto, utilizando do Visual Studio Code e instalando o ````C# Dev Kit````, ou abrindo o projeto através do Visual Studio e o executando.
+
+### Estrutura do projeto
+
+![alt text](image-1.png)
+
+Exemplo de execucao:
+
+![alt text](image-2.png)

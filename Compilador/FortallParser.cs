@@ -39,7 +39,8 @@ public partial class FortallParser : Parser {
 		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, T__6=7, T__7=8, T__8=9, 
 		T__9=10, T__10=11, T__11=12, T__12=13, T__13=14, T__14=15, T__15=16, T__16=17, 
 		T__17=18, T__18=19, T__19=20, T__20=21, T__21=22, T__22=23, BOOL_OPERATOR=24, 
-		INTEGER=25, FLOAT=26, STRING=27, BOOL=28, NULL=29, ID=30, WHITESPACE=31;
+		INTEGER=25, FLOAT=26, STRING=27, BOOL=28, NULL=29, ID=30, WHITESPACE=31, 
+		COMMENT=32;
 	public const int
 		RULE_program = 0, RULE_line = 1, RULE_statement = 2, RULE_print = 3, RULE_input = 4, 
 		RULE_ifBlock = 5, RULE_elseIfBlock = 6, RULE_whileBlock = 7, RULE_assignment = 8, 
@@ -59,7 +60,8 @@ public partial class FortallParser : Parser {
 	private static readonly string[] _SymbolicNames = {
 		null, null, null, null, null, null, null, null, null, null, null, null, 
 		null, null, null, null, null, null, null, null, null, null, null, null, 
-		"BOOL_OPERATOR", "INTEGER", "FLOAT", "STRING", "BOOL", "NULL", "ID", "WHITESPACE"
+		"BOOL_OPERATOR", "INTEGER", "FLOAT", "STRING", "BOOL", "NULL", "ID", "WHITESPACE", 
+		"COMMENT"
 	};
 	public static readonly IVocabulary DefaultVocabulary = new Vocabulary(_LiteralNames, _SymbolicNames);
 
@@ -1164,7 +1166,7 @@ public partial class FortallParser : Parser {
 	}
 
 	private static int[] _serializedATN = {
-		4,1,31,136,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,6,2,7,
+		4,1,32,136,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,6,2,7,
 		7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,2,14,7,14,
 		2,15,7,15,1,0,5,0,34,8,0,10,0,12,0,37,9,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,
 		3,1,46,8,1,1,2,1,2,1,2,1,3,1,3,1,3,1,3,1,3,1,3,1,4,1,4,1,4,1,4,1,4,1,4,

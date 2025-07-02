@@ -29,6 +29,7 @@ BOOL=28
 NULL=29
 ID=30
 WHITESPACE=31
+COMMENT=32
 ';'=1
 'print'=2
 '('=3

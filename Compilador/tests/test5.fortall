@@ -1,5 +1,5 @@
 print("Digite o valor de um produto e quantos % de promocao esta para saber o valor final");
-input(valorDoProduto);
+input(valorDoProduto); /* sexo */
 input(porcentagemDesconto);
 if(porcentagemDesconto > 100) {
     while(porcentagemDesconto > 100) {
