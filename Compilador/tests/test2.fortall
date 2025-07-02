@@ -1,0 +1,7 @@
+print("Digite um numero para saber se ele eh par");
+input(numero);
+if (numero % 2 == 0) {
+    print("Numero par");
+} else {
+    print("Numero impar");
+}

@@ -1,0 +1,15 @@
+print("Escreva um numero para saber se ele eh primo");
+input(num);
+ehPrimo = true;
+j = 2;
+while (j < num) {
+    if (num % j == 0) {
+        ehPrimo = false;
+    }
+    j = j + 1;
+}
+if (ehPrimo and num > 1) {
+    print(num + " eh primo");
+} else {
+    print(num + " nao eh primo");
+}

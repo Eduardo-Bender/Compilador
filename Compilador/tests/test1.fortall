@@ -1,3 +1,13 @@
-i = 30;
+print("escreva sua senha");
+input(senha);
+print("escreva novamente");
+input(senhaConfirma);
 
-x = 30 + 2;
+if(senha != senhaConfirma)
+{
+    print("As senhas nao sao as mesmas");
+} else if (senha == 123 or senha == "123") {
+    print("Sua senha eh mto fraca");
+} else {
+    print("Senha registrada com sucesso!!!");
+}

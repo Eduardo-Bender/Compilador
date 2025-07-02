@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eduar\\Desktop\\Distribuidos\\Compilador\\Compilador\\Compilador.csproj": {}
+    "C:\\Users\\eduar\\Desktop\\7 semestre\\Compilador\\Compilador\\Compilador.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eduar\\Desktop\\Distribuidos\\Compilador\\Compilador\\Compilador.csproj": {
+    "C:\\Users\\eduar\\Desktop\\7 semestre\\Compilador\\Compilador\\Compilador.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eduar\\Desktop\\Distribuidos\\Compilador\\Compilador\\Compilador.csproj",
+        "projectUniqueName": "C:\\Users\\eduar\\Desktop\\7 semestre\\Compilador\\Compilador\\Compilador.csproj",
         "projectName": "Compilador",
-        "projectPath": "C:\\Users\\eduar\\Desktop\\Distribuidos\\Compilador\\Compilador\\Compilador.csproj",
+        "projectPath": "C:\\Users\\eduar\\Desktop\\7 semestre\\Compilador\\Compilador\\Compilador.csproj",
         "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eduar\\Desktop\\Distribuidos\\Compilador\\Compilador\\obj\\",
+        "outputPath": "C:\\Users\\eduar\\Desktop\\7 semestre\\Compilador\\Compilador\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\eduar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\eduar\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

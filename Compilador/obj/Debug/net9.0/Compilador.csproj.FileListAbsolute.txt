@@ -17,3 +17,26 @@ C:\Users\eduar\Desktop\Distribuidos\Compilador\Compilador\obj\Debug\net9.0\Compi
 C:\Users\eduar\Desktop\Distribuidos\Compilador\Compilador\obj\Debug\net9.0\Compilador.genruntimeconfig.cache
 C:\Users\eduar\Desktop\Distribuidos\Compilador\Compilador\obj\Debug\net9.0\ref\Compilador.dll
 C:\Users\eduar\Desktop\Distribuidos\Compilador\Compilador\bin\Debug\net9.0\tests\test1.fortall
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\bin\Debug\net9.0\tests\test1.fortall
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\bin\Debug\net9.0\Compilador.exe
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\bin\Debug\net9.0\Compilador.deps.json
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\bin\Debug\net9.0\Compilador.runtimeconfig.json
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\bin\Debug\net9.0\Compilador.dll
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\bin\Debug\net9.0\Compilador.pdb
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\bin\Debug\net9.0\Antlr4.Runtime.Standard.dll
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\obj\Debug\net9.0\Compilador.csproj.AssemblyReference.cache
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\obj\Debug\net9.0\Compilador.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\obj\Debug\net9.0\Compilador.AssemblyInfoInputs.cache
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\obj\Debug\net9.0\Compilador.AssemblyInfo.cs
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\obj\Debug\net9.0\Compilador.csproj.CoreCompileInputs.cache
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\obj\Debug\net9.0\Compilador.sourcelink.json
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\obj\Debug\net9.0\Compilador.csproj.Up2Date
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\obj\Debug\net9.0\Compilador.dll
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\obj\Debug\net9.0\refint\Compilador.dll
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\obj\Debug\net9.0\Compilador.pdb
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\obj\Debug\net9.0\Compilador.genruntimeconfig.cache
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\obj\Debug\net9.0\ref\Compilador.dll
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\bin\Debug\net9.0\tests\test2.fortall
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\bin\Debug\net9.0\tests\test3.fortall
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\bin\Debug\net9.0\tests\test4.fortall
+C:\Users\eduar\Desktop\7 semestre\Compilador\Compilador\bin\Debug\net9.0\tests\test5.fortall

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cbwQcaDCKjs=",
+  "dgSpecHash": "LEmrLVhLhm4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\eduar\\Desktop\\Distribuidos\\Compilador\\Compilador\\Compilador.csproj",
+  "projectFilePath": "C:\\Users\\eduar\\Desktop\\7 semestre\\Compilador\\Compilador\\Compilador.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eduar\\.nuget\\packages\\antlr4.runtime.standard\\4.13.1\\antlr4.runtime.standard.4.13.1.nupkg.sha512"
   ],

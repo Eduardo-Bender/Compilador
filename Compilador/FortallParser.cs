@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from c:/Users/eduar/Desktop/Distribuidos/Compilador/Compilador/Fortall.g4 by ANTLR 4.13.1
+// Generated from c:/Users/eduar/Desktop/7 semestre/Compilador/Compilador/Fortall.g4 by ANTLR 4.13.1
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -38,28 +38,28 @@ public partial class FortallParser : Parser {
 	public const int
 		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, T__6=7, T__7=8, T__8=9, 
 		T__9=10, T__10=11, T__11=12, T__12=13, T__13=14, T__14=15, T__15=16, T__16=17, 
-		T__17=18, T__18=19, T__19=20, WHILE=21, BOOL_OPERATOR=22, INTEGER=23, 
-		FLOAT=24, STRING=25, BOOL=26, NULL=27, ID=28, WHITESPACE=29;
+		T__17=18, T__18=19, T__19=20, T__20=21, T__21=22, T__22=23, BOOL_OPERATOR=24, 
+		INTEGER=25, FLOAT=26, STRING=27, BOOL=28, NULL=29, ID=30, WHITESPACE=31;
 	public const int
-		RULE_program = 0, RULE_line = 1, RULE_statement = 2, RULE_ifBlock = 3, 
-		RULE_elseIfBlock = 4, RULE_whileBlock = 5, RULE_assignment = 6, RULE_expression = 7, 
-		RULE_multOp = 8, RULE_addOp = 9, RULE_compOp = 10, RULE_boolOp = 11, RULE_constant = 12, 
-		RULE_block = 13;
+		RULE_program = 0, RULE_line = 1, RULE_statement = 2, RULE_print = 3, RULE_input = 4, 
+		RULE_ifBlock = 5, RULE_elseIfBlock = 6, RULE_whileBlock = 7, RULE_assignment = 8, 
+		RULE_expression = 9, RULE_multOp = 10, RULE_addOp = 11, RULE_compOp = 12, 
+		RULE_boolOp = 13, RULE_constant = 14, RULE_block = 15;
 	public static readonly string[] ruleNames = {
-		"program", "line", "statement", "ifBlock", "elseIfBlock", "whileBlock", 
-		"assignment", "expression", "multOp", "addOp", "compOp", "boolOp", "constant", 
-		"block"
+		"program", "line", "statement", "print", "input", "ifBlock", "elseIfBlock", 
+		"whileBlock", "assignment", "expression", "multOp", "addOp", "compOp", 
+		"boolOp", "constant", "block"
 	};
 
 	private static readonly string[] _LiteralNames = {
-		null, "';'", "'if'", "'else'", "'='", "'('", "')'", "'!'", "'*'", "'/'", 
-		"'%'", "'+'", "'-'", "'=='", "'!='", "'<'", "'>'", "'<='", "'>='", "'{'", 
-		"'}'", "'while'", null, null, null, null, null, "'null'"
+		null, "';'", "'print'", "'('", "')'", "'input'", "'if'", "'else'", "'while'", 
+		"'='", "'!'", "'*'", "'/'", "'%'", "'+'", "'-'", "'=='", "'!='", "'<'", 
+		"'>'", "'<='", "'>='", "'{'", "'}'", null, null, null, null, null, "'null'"
 	};
 	private static readonly string[] _SymbolicNames = {
 		null, null, null, null, null, null, null, null, null, null, null, null, 
-		null, null, null, null, null, null, null, null, null, "WHILE", "BOOL_OPERATOR", 
-		"INTEGER", "FLOAT", "STRING", "BOOL", "NULL", "ID", "WHITESPACE"
+		null, null, null, null, null, null, null, null, null, null, null, null, 
+		"BOOL_OPERATOR", "INTEGER", "FLOAT", "STRING", "BOOL", "NULL", "ID", "WHITESPACE"
 	};
 	public static readonly IVocabulary DefaultVocabulary = new Vocabulary(_LiteralNames, _SymbolicNames);
 
@@ -122,21 +122,21 @@ public partial class FortallParser : Parser {
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 31;
+			State = 35;
 			ErrorHandler.Sync(this);
 			_la = TokenStream.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 270532612L) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 1073742180L) != 0)) {
 				{
 				{
-				State = 28;
+				State = 32;
 				line();
 				}
 				}
-				State = 33;
+				State = 37;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
 			}
-			State = 34;
+			State = 38;
 			Match(Eof);
 			}
 		}
@@ -161,6 +161,12 @@ public partial class FortallParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public IfBlockContext ifBlock() {
 			return GetRuleContext<IfBlockContext>(0);
 		}
+		[System.Diagnostics.DebuggerNonUserCode] public PrintContext print() {
+			return GetRuleContext<PrintContext>(0);
+		}
+		[System.Diagnostics.DebuggerNonUserCode] public InputContext input() {
+			return GetRuleContext<InputContext>(0);
+		}
 		public LineContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
 		{
@@ -179,28 +185,42 @@ public partial class FortallParser : Parser {
 		LineContext _localctx = new LineContext(Context, State);
 		EnterRule(_localctx, 2, RULE_line);
 		try {
-			State = 39;
+			State = 45;
 			ErrorHandler.Sync(this);
 			switch (TokenStream.LA(1)) {
 			case ID:
 				EnterOuterAlt(_localctx, 1);
 				{
-				State = 36;
+				State = 40;
 				statement();
 				}
 				break;
-			case WHILE:
+			case T__7:
 				EnterOuterAlt(_localctx, 2);
 				{
-				State = 37;
+				State = 41;
 				whileBlock();
 				}
 				break;
-			case T__1:
+			case T__5:
 				EnterOuterAlt(_localctx, 3);
 				{
-				State = 38;
+				State = 42;
 				ifBlock();
+				}
+				break;
+			case T__1:
+				EnterOuterAlt(_localctx, 4);
+				{
+				State = 43;
+				print();
+				}
+				break;
+			case T__4:
+				EnterOuterAlt(_localctx, 5);
+				{
+				State = 44;
+				input();
 				}
 				break;
 			default:
@@ -242,9 +262,101 @@ public partial class FortallParser : Parser {
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 41;
+			State = 47;
 			assignment();
-			State = 42;
+			State = 48;
+			Match(T__0);
+			}
+		}
+		catch (RecognitionException re) {
+			_localctx.exception = re;
+			ErrorHandler.ReportError(this, re);
+			ErrorHandler.Recover(this, re);
+		}
+		finally {
+			ExitRule();
+		}
+		return _localctx;
+	}
+
+	public partial class PrintContext : ParserRuleContext {
+		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression() {
+			return GetRuleContext<ExpressionContext>(0);
+		}
+		public PrintContext(ParserRuleContext parent, int invokingState)
+			: base(parent, invokingState)
+		{
+		}
+		public override int RuleIndex { get { return RULE_print; } }
+		[System.Diagnostics.DebuggerNonUserCode]
+		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
+			IFortallVisitor<TResult> typedVisitor = visitor as IFortallVisitor<TResult>;
+			if (typedVisitor != null) return typedVisitor.VisitPrint(this);
+			else return visitor.VisitChildren(this);
+		}
+	}
+
+	[RuleVersion(0)]
+	public PrintContext print() {
+		PrintContext _localctx = new PrintContext(Context, State);
+		EnterRule(_localctx, 6, RULE_print);
+		try {
+			EnterOuterAlt(_localctx, 1);
+			{
+			State = 50;
+			Match(T__1);
+			State = 51;
+			Match(T__2);
+			State = 52;
+			expression(0);
+			State = 53;
+			Match(T__3);
+			State = 54;
+			Match(T__0);
+			}
+		}
+		catch (RecognitionException re) {
+			_localctx.exception = re;
+			ErrorHandler.ReportError(this, re);
+			ErrorHandler.Recover(this, re);
+		}
+		finally {
+			ExitRule();
+		}
+		return _localctx;
+	}
+
+	public partial class InputContext : ParserRuleContext {
+		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode ID() { return GetToken(FortallParser.ID, 0); }
+		public InputContext(ParserRuleContext parent, int invokingState)
+			: base(parent, invokingState)
+		{
+		}
+		public override int RuleIndex { get { return RULE_input; } }
+		[System.Diagnostics.DebuggerNonUserCode]
+		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
+			IFortallVisitor<TResult> typedVisitor = visitor as IFortallVisitor<TResult>;
+			if (typedVisitor != null) return typedVisitor.VisitInput(this);
+			else return visitor.VisitChildren(this);
+		}
+	}
+
+	[RuleVersion(0)]
+	public InputContext input() {
+		InputContext _localctx = new InputContext(Context, State);
+		EnterRule(_localctx, 8, RULE_input);
+		try {
+			EnterOuterAlt(_localctx, 1);
+			{
+			State = 56;
+			Match(T__4);
+			State = 57;
+			Match(T__2);
+			State = 58;
+			Match(ID);
+			State = 59;
+			Match(T__3);
+			State = 60;
 			Match(T__0);
 			}
 		}
@@ -266,8 +378,11 @@ public partial class FortallParser : Parser {
 		[System.Diagnostics.DebuggerNonUserCode] public BlockContext block() {
 			return GetRuleContext<BlockContext>(0);
 		}
-		[System.Diagnostics.DebuggerNonUserCode] public ElseIfBlockContext elseIfBlock() {
-			return GetRuleContext<ElseIfBlockContext>(0);
+		[System.Diagnostics.DebuggerNonUserCode] public ElseIfBlockContext[] elseIfBlock() {
+			return GetRuleContexts<ElseIfBlockContext>();
+		}
+		[System.Diagnostics.DebuggerNonUserCode] public ElseIfBlockContext elseIfBlock(int i) {
+			return GetRuleContext<ElseIfBlockContext>(i);
 		}
 		public IfBlockContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
@@ -285,21 +400,34 @@ public partial class FortallParser : Parser {
 	[RuleVersion(0)]
 	public IfBlockContext ifBlock() {
 		IfBlockContext _localctx = new IfBlockContext(Context, State);
-		EnterRule(_localctx, 6, RULE_ifBlock);
+		EnterRule(_localctx, 10, RULE_ifBlock);
 		try {
+			int _alt;
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 44;
-			Match(T__1);
-			State = 45;
+			State = 62;
+			Match(T__5);
+			State = 63;
 			expression(0);
-			State = 46;
+			State = 64;
 			block();
-			{
-			State = 47;
-			Match(T__2);
-			State = 48;
-			elseIfBlock();
+			State = 69;
+			ErrorHandler.Sync(this);
+			_alt = Interpreter.AdaptivePredict(TokenStream,2,Context);
+			while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
+				if ( _alt==1 ) {
+					{
+					{
+					State = 65;
+					Match(T__6);
+					State = 66;
+					elseIfBlock();
+					}
+					} 
+				}
+				State = 71;
+				ErrorHandler.Sync(this);
+				_alt = Interpreter.AdaptivePredict(TokenStream,2,Context);
 			}
 			}
 		}
@@ -337,22 +465,22 @@ public partial class FortallParser : Parser {
 	[RuleVersion(0)]
 	public ElseIfBlockContext elseIfBlock() {
 		ElseIfBlockContext _localctx = new ElseIfBlockContext(Context, State);
-		EnterRule(_localctx, 8, RULE_elseIfBlock);
+		EnterRule(_localctx, 12, RULE_elseIfBlock);
 		try {
-			State = 52;
+			State = 74;
 			ErrorHandler.Sync(this);
 			switch (TokenStream.LA(1)) {
-			case T__18:
+			case T__21:
 				EnterOuterAlt(_localctx, 1);
 				{
-				State = 50;
+				State = 72;
 				block();
 				}
 				break;
-			case T__1:
+			case T__5:
 				EnterOuterAlt(_localctx, 2);
 				{
-				State = 51;
+				State = 73;
 				ifBlock();
 				}
 				break;
@@ -372,7 +500,6 @@ public partial class FortallParser : Parser {
 	}
 
 	public partial class WhileBlockContext : ParserRuleContext {
-		[System.Diagnostics.DebuggerNonUserCode] public ITerminalNode WHILE() { return GetToken(FortallParser.WHILE, 0); }
 		[System.Diagnostics.DebuggerNonUserCode] public ExpressionContext expression() {
 			return GetRuleContext<ExpressionContext>(0);
 		}
@@ -395,15 +522,15 @@ public partial class FortallParser : Parser {
 	[RuleVersion(0)]
 	public WhileBlockContext whileBlock() {
 		WhileBlockContext _localctx = new WhileBlockContext(Context, State);
-		EnterRule(_localctx, 10, RULE_whileBlock);
+		EnterRule(_localctx, 14, RULE_whileBlock);
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 54;
-			Match(WHILE);
-			State = 55;
+			State = 76;
+			Match(T__7);
+			State = 77;
 			expression(0);
-			State = 56;
+			State = 78;
 			block();
 			}
 		}
@@ -439,15 +566,15 @@ public partial class FortallParser : Parser {
 	[RuleVersion(0)]
 	public AssignmentContext assignment() {
 		AssignmentContext _localctx = new AssignmentContext(Context, State);
-		EnterRule(_localctx, 12, RULE_assignment);
+		EnterRule(_localctx, 16, RULE_assignment);
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 58;
+			State = 80;
 			Match(ID);
-			State = 59;
-			Match(T__3);
-			State = 60;
+			State = 81;
+			Match(T__8);
+			State = 82;
 			expression(0);
 			}
 		}
@@ -603,13 +730,13 @@ public partial class FortallParser : Parser {
 		int _parentState = State;
 		ExpressionContext _localctx = new ExpressionContext(Context, _parentState);
 		ExpressionContext _prevctx = _localctx;
-		int _startState = 14;
-		EnterRecursionRule(_localctx, 14, RULE_expression, _p);
+		int _startState = 18;
+		EnterRecursionRule(_localctx, 18, RULE_expression, _p);
 		try {
 			int _alt;
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 71;
+			State = 93;
 			ErrorHandler.Sync(this);
 			switch (TokenStream.LA(1)) {
 			case INTEGER:
@@ -622,7 +749,7 @@ public partial class FortallParser : Parser {
 				Context = _localctx;
 				_prevctx = _localctx;
 
-				State = 63;
+				State = 85;
 				constant();
 				}
 				break;
@@ -631,31 +758,31 @@ public partial class FortallParser : Parser {
 				_localctx = new IdentifierExpressionContext(_localctx);
 				Context = _localctx;
 				_prevctx = _localctx;
-				State = 64;
+				State = 86;
 				Match(ID);
 				}
 				break;
-			case T__4:
+			case T__2:
 				{
 				_localctx = new ParenthesizedExpressionContext(_localctx);
 				Context = _localctx;
 				_prevctx = _localctx;
-				State = 65;
-				Match(T__4);
-				State = 66;
+				State = 87;
+				Match(T__2);
+				State = 88;
 				expression(0);
-				State = 67;
-				Match(T__5);
+				State = 89;
+				Match(T__3);
 				}
 				break;
-			case T__6:
+			case T__9:
 				{
 				_localctx = new NegationExpressionContext(_localctx);
 				Context = _localctx;
 				_prevctx = _localctx;
-				State = 69;
-				Match(T__6);
-				State = 70;
+				State = 91;
+				Match(T__9);
+				State = 92;
 				expression(5);
 				}
 				break;
@@ -663,27 +790,27 @@ public partial class FortallParser : Parser {
 				throw new NoViableAltException(this);
 			}
 			Context.Stop = TokenStream.LT(-1);
-			State = 91;
+			State = 113;
 			ErrorHandler.Sync(this);
-			_alt = Interpreter.AdaptivePredict(TokenStream,5,Context);
+			_alt = Interpreter.AdaptivePredict(TokenStream,6,Context);
 			while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					if ( ParseListeners!=null )
 						TriggerExitRuleEvent();
 					_prevctx = _localctx;
 					{
-					State = 89;
+					State = 111;
 					ErrorHandler.Sync(this);
-					switch ( Interpreter.AdaptivePredict(TokenStream,4,Context) ) {
+					switch ( Interpreter.AdaptivePredict(TokenStream,5,Context) ) {
 					case 1:
 						{
 						_localctx = new MultiplicativeExpressionContext(new ExpressionContext(_parentctx, _parentState));
 						PushNewRecursionContext(_localctx, _startState, RULE_expression);
-						State = 73;
+						State = 95;
 						if (!(Precpred(Context, 4))) throw new FailedPredicateException(this, "Precpred(Context, 4)");
-						State = 74;
+						State = 96;
 						multOp();
-						State = 75;
+						State = 97;
 						expression(5);
 						}
 						break;
@@ -691,11 +818,11 @@ public partial class FortallParser : Parser {
 						{
 						_localctx = new AdditiveExpressionContext(new ExpressionContext(_parentctx, _parentState));
 						PushNewRecursionContext(_localctx, _startState, RULE_expression);
-						State = 77;
+						State = 99;
 						if (!(Precpred(Context, 3))) throw new FailedPredicateException(this, "Precpred(Context, 3)");
-						State = 78;
+						State = 100;
 						addOp();
-						State = 79;
+						State = 101;
 						expression(4);
 						}
 						break;
@@ -703,11 +830,11 @@ public partial class FortallParser : Parser {
 						{
 						_localctx = new ComparisonExpressionContext(new ExpressionContext(_parentctx, _parentState));
 						PushNewRecursionContext(_localctx, _startState, RULE_expression);
-						State = 81;
+						State = 103;
 						if (!(Precpred(Context, 2))) throw new FailedPredicateException(this, "Precpred(Context, 2)");
-						State = 82;
+						State = 104;
 						compOp();
-						State = 83;
+						State = 105;
 						expression(3);
 						}
 						break;
@@ -715,20 +842,20 @@ public partial class FortallParser : Parser {
 						{
 						_localctx = new BooleanExpressionContext(new ExpressionContext(_parentctx, _parentState));
 						PushNewRecursionContext(_localctx, _startState, RULE_expression);
-						State = 85;
+						State = 107;
 						if (!(Precpred(Context, 1))) throw new FailedPredicateException(this, "Precpred(Context, 1)");
-						State = 86;
+						State = 108;
 						boolOp();
-						State = 87;
+						State = 109;
 						expression(2);
 						}
 						break;
 					}
 					} 
 				}
-				State = 93;
+				State = 115;
 				ErrorHandler.Sync(this);
-				_alt = Interpreter.AdaptivePredict(TokenStream,5,Context);
+				_alt = Interpreter.AdaptivePredict(TokenStream,6,Context);
 			}
 			}
 		}
@@ -760,14 +887,14 @@ public partial class FortallParser : Parser {
 	[RuleVersion(0)]
 	public MultOpContext multOp() {
 		MultOpContext _localctx = new MultOpContext(Context, State);
-		EnterRule(_localctx, 16, RULE_multOp);
+		EnterRule(_localctx, 20, RULE_multOp);
 		int _la;
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 94;
+			State = 116;
 			_la = TokenStream.LA(1);
-			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 1792L) != 0)) ) {
+			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 14336L) != 0)) ) {
 			ErrorHandler.RecoverInline(this);
 			}
 			else {
@@ -804,14 +931,14 @@ public partial class FortallParser : Parser {
 	[RuleVersion(0)]
 	public AddOpContext addOp() {
 		AddOpContext _localctx = new AddOpContext(Context, State);
-		EnterRule(_localctx, 18, RULE_addOp);
+		EnterRule(_localctx, 22, RULE_addOp);
 		int _la;
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 96;
+			State = 118;
 			_la = TokenStream.LA(1);
-			if ( !(_la==T__10 || _la==T__11) ) {
+			if ( !(_la==T__13 || _la==T__14) ) {
 			ErrorHandler.RecoverInline(this);
 			}
 			else {
@@ -848,14 +975,14 @@ public partial class FortallParser : Parser {
 	[RuleVersion(0)]
 	public CompOpContext compOp() {
 		CompOpContext _localctx = new CompOpContext(Context, State);
-		EnterRule(_localctx, 20, RULE_compOp);
+		EnterRule(_localctx, 24, RULE_compOp);
 		int _la;
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 98;
+			State = 120;
 			_la = TokenStream.LA(1);
-			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 516096L) != 0)) ) {
+			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 4128768L) != 0)) ) {
 			ErrorHandler.RecoverInline(this);
 			}
 			else {
@@ -893,11 +1020,11 @@ public partial class FortallParser : Parser {
 	[RuleVersion(0)]
 	public BoolOpContext boolOp() {
 		BoolOpContext _localctx = new BoolOpContext(Context, State);
-		EnterRule(_localctx, 22, RULE_boolOp);
+		EnterRule(_localctx, 26, RULE_boolOp);
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 100;
+			State = 122;
 			Match(BOOL_OPERATOR);
 			}
 		}
@@ -934,14 +1061,14 @@ public partial class FortallParser : Parser {
 	[RuleVersion(0)]
 	public ConstantContext constant() {
 		ConstantContext _localctx = new ConstantContext(Context, State);
-		EnterRule(_localctx, 24, RULE_constant);
+		EnterRule(_localctx, 28, RULE_constant);
 		int _la;
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 102;
+			State = 124;
 			_la = TokenStream.LA(1);
-			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 260046848L) != 0)) ) {
+			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 1040187392L) != 0)) ) {
 			ErrorHandler.RecoverInline(this);
 			}
 			else {
@@ -984,29 +1111,29 @@ public partial class FortallParser : Parser {
 	[RuleVersion(0)]
 	public BlockContext block() {
 		BlockContext _localctx = new BlockContext(Context, State);
-		EnterRule(_localctx, 26, RULE_block);
+		EnterRule(_localctx, 30, RULE_block);
 		int _la;
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 104;
-			Match(T__18);
-			State = 108;
+			State = 126;
+			Match(T__21);
+			State = 130;
 			ErrorHandler.Sync(this);
 			_la = TokenStream.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 270532612L) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 1073742180L) != 0)) {
 				{
 				{
-				State = 105;
+				State = 127;
 				line();
 				}
 				}
-				State = 110;
+				State = 132;
 				ErrorHandler.Sync(this);
 				_la = TokenStream.LA(1);
 			}
-			State = 111;
-			Match(T__19);
+			State = 133;
+			Match(T__22);
 			}
 		}
 		catch (RecognitionException re) {
@@ -1022,7 +1149,7 @@ public partial class FortallParser : Parser {
 
 	public override bool Sempred(RuleContext _localctx, int ruleIndex, int predIndex) {
 		switch (ruleIndex) {
-		case 7: return expression_sempred((ExpressionContext)_localctx, predIndex);
+		case 9: return expression_sempred((ExpressionContext)_localctx, predIndex);
 		}
 		return true;
 	}
@@ -1037,38 +1164,45 @@ public partial class FortallParser : Parser {
 	}
 
 	private static int[] _serializedATN = {
-		4,1,29,114,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,6,2,7,
-		7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,1,0,5,0,30,
-		8,0,10,0,12,0,33,9,0,1,0,1,0,1,1,1,1,1,1,3,1,40,8,1,1,2,1,2,1,2,1,3,1,
-		3,1,3,1,3,1,3,1,3,1,4,1,4,3,4,53,8,4,1,5,1,5,1,5,1,5,1,6,1,6,1,6,1,6,1,
-		7,1,7,1,7,1,7,1,7,1,7,1,7,1,7,1,7,3,7,72,8,7,1,7,1,7,1,7,1,7,1,7,1,7,1,
-		7,1,7,1,7,1,7,1,7,1,7,1,7,1,7,1,7,1,7,5,7,90,8,7,10,7,12,7,93,9,7,1,8,
-		1,8,1,9,1,9,1,10,1,10,1,11,1,11,1,12,1,12,1,13,1,13,5,13,107,8,13,10,13,
-		12,13,110,9,13,1,13,1,13,1,13,0,1,14,14,0,2,4,6,8,10,12,14,16,18,20,22,
-		24,26,0,4,1,0,8,10,1,0,11,12,1,0,13,18,1,0,23,27,111,0,31,1,0,0,0,2,39,
-		1,0,0,0,4,41,1,0,0,0,6,44,1,0,0,0,8,52,1,0,0,0,10,54,1,0,0,0,12,58,1,0,
-		0,0,14,71,1,0,0,0,16,94,1,0,0,0,18,96,1,0,0,0,20,98,1,0,0,0,22,100,1,0,
-		0,0,24,102,1,0,0,0,26,104,1,0,0,0,28,30,3,2,1,0,29,28,1,0,0,0,30,33,1,
-		0,0,0,31,29,1,0,0,0,31,32,1,0,0,0,32,34,1,0,0,0,33,31,1,0,0,0,34,35,5,
-		0,0,1,35,1,1,0,0,0,36,40,3,4,2,0,37,40,3,10,5,0,38,40,3,6,3,0,39,36,1,
-		0,0,0,39,37,1,0,0,0,39,38,1,0,0,0,40,3,1,0,0,0,41,42,3,12,6,0,42,43,5,
-		1,0,0,43,5,1,0,0,0,44,45,5,2,0,0,45,46,3,14,7,0,46,47,3,26,13,0,47,48,
-		5,3,0,0,48,49,3,8,4,0,49,7,1,0,0,0,50,53,3,26,13,0,51,53,3,6,3,0,52,50,
-		1,0,0,0,52,51,1,0,0,0,53,9,1,0,0,0,54,55,5,21,0,0,55,56,3,14,7,0,56,57,
-		3,26,13,0,57,11,1,0,0,0,58,59,5,28,0,0,59,60,5,4,0,0,60,61,3,14,7,0,61,
-		13,1,0,0,0,62,63,6,7,-1,0,63,72,3,24,12,0,64,72,5,28,0,0,65,66,5,5,0,0,
-		66,67,3,14,7,0,67,68,5,6,0,0,68,72,1,0,0,0,69,70,5,7,0,0,70,72,3,14,7,
-		5,71,62,1,0,0,0,71,64,1,0,0,0,71,65,1,0,0,0,71,69,1,0,0,0,72,91,1,0,0,
-		0,73,74,10,4,0,0,74,75,3,16,8,0,75,76,3,14,7,5,76,90,1,0,0,0,77,78,10,
-		3,0,0,78,79,3,18,9,0,79,80,3,14,7,4,80,90,1,0,0,0,81,82,10,2,0,0,82,83,
-		3,20,10,0,83,84,3,14,7,3,84,90,1,0,0,0,85,86,10,1,0,0,86,87,3,22,11,0,
-		87,88,3,14,7,2,88,90,1,0,0,0,89,73,1,0,0,0,89,77,1,0,0,0,89,81,1,0,0,0,
-		89,85,1,0,0,0,90,93,1,0,0,0,91,89,1,0,0,0,91,92,1,0,0,0,92,15,1,0,0,0,
-		93,91,1,0,0,0,94,95,7,0,0,0,95,17,1,0,0,0,96,97,7,1,0,0,97,19,1,0,0,0,
-		98,99,7,2,0,0,99,21,1,0,0,0,100,101,5,22,0,0,101,23,1,0,0,0,102,103,7,
-		3,0,0,103,25,1,0,0,0,104,108,5,19,0,0,105,107,3,2,1,0,106,105,1,0,0,0,
-		107,110,1,0,0,0,108,106,1,0,0,0,108,109,1,0,0,0,109,111,1,0,0,0,110,108,
-		1,0,0,0,111,112,5,20,0,0,112,27,1,0,0,0,7,31,39,52,71,89,91,108
+		4,1,31,136,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,6,2,7,
+		7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,2,14,7,14,
+		2,15,7,15,1,0,5,0,34,8,0,10,0,12,0,37,9,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,
+		3,1,46,8,1,1,2,1,2,1,2,1,3,1,3,1,3,1,3,1,3,1,3,1,4,1,4,1,4,1,4,1,4,1,4,
+		1,5,1,5,1,5,1,5,1,5,5,5,68,8,5,10,5,12,5,71,9,5,1,6,1,6,3,6,75,8,6,1,7,
+		1,7,1,7,1,7,1,8,1,8,1,8,1,8,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,3,9,94,
+		8,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,5,
+		9,112,8,9,10,9,12,9,115,9,9,1,10,1,10,1,11,1,11,1,12,1,12,1,13,1,13,1,
+		14,1,14,1,15,1,15,5,15,129,8,15,10,15,12,15,132,9,15,1,15,1,15,1,15,0,
+		1,18,16,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,0,4,1,0,11,13,1,0,14,
+		15,1,0,16,21,1,0,25,29,134,0,35,1,0,0,0,2,45,1,0,0,0,4,47,1,0,0,0,6,50,
+		1,0,0,0,8,56,1,0,0,0,10,62,1,0,0,0,12,74,1,0,0,0,14,76,1,0,0,0,16,80,1,
+		0,0,0,18,93,1,0,0,0,20,116,1,0,0,0,22,118,1,0,0,0,24,120,1,0,0,0,26,122,
+		1,0,0,0,28,124,1,0,0,0,30,126,1,0,0,0,32,34,3,2,1,0,33,32,1,0,0,0,34,37,
+		1,0,0,0,35,33,1,0,0,0,35,36,1,0,0,0,36,38,1,0,0,0,37,35,1,0,0,0,38,39,
+		5,0,0,1,39,1,1,0,0,0,40,46,3,4,2,0,41,46,3,14,7,0,42,46,3,10,5,0,43,46,
+		3,6,3,0,44,46,3,8,4,0,45,40,1,0,0,0,45,41,1,0,0,0,45,42,1,0,0,0,45,43,
+		1,0,0,0,45,44,1,0,0,0,46,3,1,0,0,0,47,48,3,16,8,0,48,49,5,1,0,0,49,5,1,
+		0,0,0,50,51,5,2,0,0,51,52,5,3,0,0,52,53,3,18,9,0,53,54,5,4,0,0,54,55,5,
+		1,0,0,55,7,1,0,0,0,56,57,5,5,0,0,57,58,5,3,0,0,58,59,5,30,0,0,59,60,5,
+		4,0,0,60,61,5,1,0,0,61,9,1,0,0,0,62,63,5,6,0,0,63,64,3,18,9,0,64,69,3,
+		30,15,0,65,66,5,7,0,0,66,68,3,12,6,0,67,65,1,0,0,0,68,71,1,0,0,0,69,67,
+		1,0,0,0,69,70,1,0,0,0,70,11,1,0,0,0,71,69,1,0,0,0,72,75,3,30,15,0,73,75,
+		3,10,5,0,74,72,1,0,0,0,74,73,1,0,0,0,75,13,1,0,0,0,76,77,5,8,0,0,77,78,
+		3,18,9,0,78,79,3,30,15,0,79,15,1,0,0,0,80,81,5,30,0,0,81,82,5,9,0,0,82,
+		83,3,18,9,0,83,17,1,0,0,0,84,85,6,9,-1,0,85,94,3,28,14,0,86,94,5,30,0,
+		0,87,88,5,3,0,0,88,89,3,18,9,0,89,90,5,4,0,0,90,94,1,0,0,0,91,92,5,10,
+		0,0,92,94,3,18,9,5,93,84,1,0,0,0,93,86,1,0,0,0,93,87,1,0,0,0,93,91,1,0,
+		0,0,94,113,1,0,0,0,95,96,10,4,0,0,96,97,3,20,10,0,97,98,3,18,9,5,98,112,
+		1,0,0,0,99,100,10,3,0,0,100,101,3,22,11,0,101,102,3,18,9,4,102,112,1,0,
+		0,0,103,104,10,2,0,0,104,105,3,24,12,0,105,106,3,18,9,3,106,112,1,0,0,
+		0,107,108,10,1,0,0,108,109,3,26,13,0,109,110,3,18,9,2,110,112,1,0,0,0,
+		111,95,1,0,0,0,111,99,1,0,0,0,111,103,1,0,0,0,111,107,1,0,0,0,112,115,
+		1,0,0,0,113,111,1,0,0,0,113,114,1,0,0,0,114,19,1,0,0,0,115,113,1,0,0,0,
+		116,117,7,0,0,0,117,21,1,0,0,0,118,119,7,1,0,0,119,23,1,0,0,0,120,121,
+		7,2,0,0,121,25,1,0,0,0,122,123,5,24,0,0,123,27,1,0,0,0,124,125,7,3,0,0,
+		125,29,1,0,0,0,126,130,5,22,0,0,127,129,3,2,1,0,128,127,1,0,0,0,129,132,
+		1,0,0,0,130,128,1,0,0,0,130,131,1,0,0,0,131,133,1,0,0,0,132,130,1,0,0,
+		0,133,134,5,23,0,0,134,31,1,0,0,0,8,35,45,69,74,93,111,113,130
 	};
 
 	public static readonly ATN _ATN =

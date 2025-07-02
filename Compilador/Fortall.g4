@@ -1,13 +1,14 @@
 grammar Fortall;
 
 program             : line* EOF ;
-line                : statement | whileBlock | ifBlock;
+line                : statement | whileBlock | ifBlock | print | input;
 statement           : assignment ';';
 
-ifBlock             : 'if' expression block ('else' elseIfBlock);
+print               : 'print' '(' expression ')' ';' ;
+input               : 'input' '(' ID ')' ';';
+ifBlock             : 'if' expression block ('else' elseIfBlock)*;
 elseIfBlock         : block | ifBlock;
-whileBlock          : WHILE expression block ;
-WHILE               : 'while';
+whileBlock          : 'while' expression block ;
 assignment          : ID '=' expression ;
 
 expression          : constant                          #constantExpression
@@ -25,7 +26,7 @@ addOp               : '+' | '-' ;
 compOp              : '==' | '!=' | '<' | '>' | '<=' | '>=' ;
 boolOp              : BOOL_OPERATOR;
 
-BOOL_OPERATOR       : 'and' | 'or' ;
+BOOL_OPERATOR       : 'and' | 'or' | '&&' | '||' ;
 
 constant            : INTEGER
                     | FLOAT

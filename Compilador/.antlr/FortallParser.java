@@ -1,4 +1,4 @@
-// Generated from c:/Users/eduar/Desktop/Distribuidos/Compilador/Compilador/Fortall.g4 by ANTLR 4.13.1
+// Generated from c:/Users/eduar/Desktop/7 semestre/Compilador/Compilador/Fortall.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;

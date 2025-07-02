@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from c:/Users/eduar/Desktop/Distribuidos/Compilador/Compilador/Fortall.g4 by ANTLR 4.13.1
+// Generated from c:/Users/eduar/Desktop/7 semestre/Compilador/Compilador/Fortall.g4 by ANTLR 4.13.1
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -49,6 +49,18 @@ public interface IFortallVisitor<Result> : IParseTreeVisitor<Result> {
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
 	Result VisitStatement([NotNull] FortallParser.StatementContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="FortallParser.print"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitPrint([NotNull] FortallParser.PrintContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="FortallParser.input"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitInput([NotNull] FortallParser.InputContext context);
 	/// <summary>
 	/// Visit a parse tree produced by <see cref="FortallParser.ifBlock"/>.
 	/// </summary>
