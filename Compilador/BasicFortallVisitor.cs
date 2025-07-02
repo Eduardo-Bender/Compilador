@@ -143,6 +143,22 @@ public class BasicFortallVisitor : FortallBaseVisitor<object?>
         return Variables[varName];
     }
 
+    public override object VisitNegationExpression(FortallParser.NegationExpressionContext context)
+    {
+        var value = Visit(context.expression());
+
+        if (value is bool b)
+            return !b;
+
+        if (value is int i)
+            return -i;
+
+        if (value is float f)
+            return -f;
+
+        throw new Exception($"Nao e possivel aplicar negacao a um valor do tipo {value?.GetType()}.");
+    }
+
     public override object? VisitMultiplicativeExpression(FortallParser.MultiplicativeExpressionContext context)
     {
         var left = Visit(context.expression(0));
