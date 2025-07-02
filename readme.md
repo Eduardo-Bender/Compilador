@@ -1,6 +1,9 @@
-# Compilador de "Fortall"
+## Compilador de "Fortall"
+###### Eduardo Bender Tiggemann
+
 #### Gramática definida baseada na linguagem Fortall:
 
+```
 grammar Fortall;
 
 program             : line* EOF ;
@@ -49,6 +52,7 @@ block               : '{' line* '}' ;
 ID                  : [a-zA-Z_][a-zA-Z0-9_]* ;
 WHITESPACE          : [ \t\r\n]+ -> skip ;  
 COMMENT             : '/*' .*? '*/' -> skip ;
+```
 
 
 #### Tecnologias utilizadas:
